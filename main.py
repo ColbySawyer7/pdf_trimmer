@@ -7,7 +7,7 @@ def extract_first(input_pdf, output_pdf, pages=3):
     writer = PdfWriter()
 
     # Extract first 3 pages of pdf
-    writer.append(fileobj=reader, pages=(0,pages))
+    writer.append(fileobj=reader, pages=(0, pages))
 
     # Start Output PDF and Write to it 
     output_pdf = open(output_pdf, "wb")
@@ -19,7 +19,7 @@ def extract_first(input_pdf, output_pdf, pages=3):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python extract_pages.py <input_pdf> <output_pdf>")
+        print("Usage: python3 main.py <input_pdf> <output_pdf>")
         sys.exit(1)
 
     input_pdf = sys.argv[1]
