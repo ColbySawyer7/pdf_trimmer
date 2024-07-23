@@ -76,7 +76,7 @@ def process_folder(pages=3):
             # Call the extract_first function to process the file
             extract_first(input_pdf, output_folder, pages)
             # Print a message indicating successful processing
-            #print(f"First {pages} pages of {input_pdf} have been saved as {output_pdf}")
+            # print(f"First {pages} pages of {input_pdf} have been saved as {output_pdf}")
 
 def find_keywords(input_pdf):
     info = CCGFile() 
@@ -87,7 +87,7 @@ def find_keywords(input_pdf):
     for i, word in enumerate(words):
         # information items will be found prefixed with their "key"
         text = word[4]
-        #print(f'Index:{i}, Word: {text}')
+        print(f'Index:{i}, Word: {text}')
         if text == "DATE:":  # the following word will be the date!
             date = words[i + 1][4]
             print("DATE:", date)
