@@ -1,6 +1,8 @@
 import sys  # Import the sys module to handle command-line arguments
 from pypdf import PdfWriter  # Import PdfWriter from the pypdf library to manipulate PDF 
 
+# Ingest a single PDF and output a single PDF from command line arguments
+
 def extract_first(input_pdf, output_pdf, pages=3):
     """
     Function to extract the first few pages from an input PDF and save them to an output PDF.

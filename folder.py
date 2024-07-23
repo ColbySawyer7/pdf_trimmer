@@ -2,6 +2,8 @@ import sys  # Importing the sys module to get command line arguments
 import os   # Importing the os module to interact with the operating system
 from pypdf import PdfWriter  # Importing PdfWriter from pypdf to handle PDF writing
 
+# Take all PDFs from one folder, extract first 3 pages and then save as new PDF based on new name
+
 def extract_first(input_pdf, output_pdf, pages=3):
     """
     Function to extract the first few pages from an input PDF and save them to an output PDF.

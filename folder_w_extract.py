@@ -4,6 +4,8 @@ from pypdf import PdfWriter  # Importing PdfWriter from pypdf to handle PDF writ
 import pymupdf
 import fitz
 
+# Trim all PDFs in input directory, renaming based on extracted text
+
 class CCGFile:
     def __init__(self, ccg_order: str = None, lot: int = None, date: str = None):
         self.ccg_order = ccg_order

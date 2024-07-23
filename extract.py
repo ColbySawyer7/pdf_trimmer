@@ -3,6 +3,8 @@ from pypdf import PdfWriter  # Import PdfWriter from the pypdf library to manipu
 import pymupdf
 import fitz
 
+# Read single PDF, trim it to size and then name a new output file based on the extracted text
+
 class CCGFile:
     def __init__(self, ccg_order: str = None, lot: int = None, date: str = None):
         self.ccg_order = ccg_order
